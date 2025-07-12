@@ -5,8 +5,3 @@ function inputElemHandler() {
     const username = inputElem.value.trim();  
     nameElem.textContent = username === '' ? 'Anonymous': username;    
 };
-inputElem.addEventListener('blur', handleInputBlur);
-function handleInputBlur() {
-    inputElem.value = '';
-    inputElemHandler();
-}
